@@ -1,4 +1,4 @@
- Problem Statement
+ Problem Statement:
 
 India’s gig economy relies heavily on delivery partners working for platforms like Swiggy, Zomato, and other on-demand services. These workers earn on a daily basis, making their income highly dependent on consistent working hours.
 However, their ability to work is often disrupted by external conditions beyond their control, such as:
@@ -12,7 +12,7 @@ Currently, there is no dedicated insurance or financial safety system that prote
 This creates a major gap where gig workers are left financially vulnerable whenever such disruptions occur.
 Our project aims to solve this problem by designing an AI-powered parametric insurance platform that automatically detects these disruptions and provides instant income protection, without requiring manual claims.
 
-Target Persona
+Target Persona:
 
 Our solution is designed for food delivery partners working on platforms like Swiggy and Zomato in urban areas.
 
@@ -48,7 +48,8 @@ Work Pattern
 Even when they are ready to work, they are unable to earn due to these disruptions.
 
  
- Parametric Triggers 
+
+ Parametric Triggers:
 
 Our system does not rely on a single data point (like GPS or weather) to trigger payouts.  
 Instead, we use multi-layer parametric triggers, combining environmental, behavioral, and platform signals.
@@ -77,7 +78,8 @@ Multi-Condition Trigger Logic
 This prevents false claims based on a single manipulated signal.
 
  
- Weekly Pricing Model
+  
+ Weekly Pricing Model:
 
 Our platform follows a dynamic weekly pricing model, designed specifically for gig workers whose earnings are short-term, variable, and highly sensitive to external disruptions.
 Unlike traditional insurance, which relies on fixed premiums and long-term policies, our model is:
@@ -137,6 +139,7 @@ Each claim is assigned a Fraud Risk Score, which determines how it is processed.
 
 Differentiation: Genuine Worker vs Spoofed User
   Instead of trusting location alone, our AI model analyzes **behavioral consistency over time**.
+
 
 AI Approach:
 
@@ -205,7 +208,7 @@ High-Risk Claims
 * Sent for admin review  
 
 
-Tech Stack
+Tech Stack:
 
 Our platform is built using a modern, scalable architecture that combines frontend, backend, AI/ML, and real-time data integrations to deliver a seamless 
 and intelligent insurance system.
@@ -276,7 +279,8 @@ This layer ensures protection against:
 * Fake claims  
 * Coordinated fraud attacks  
 
-System Workflow
+
+System Workflow:
 
 Our platform follows a **fully automated, AI-driven workflow** that ensures seamless insurance coverage, real-time disruption detection, and instant payouts.
 User Onboarding
@@ -335,7 +339,8 @@ Instant Payout Processing
 * Payment sent via:
   - UPI / wallet (simulated)  
 
-Conclusion
+
+Conclusion:
 
 Our platform presents a practical and scalable approach to solving one of the most overlooked problems in the gig economy — income loss due to external disruptions.
 By combining AI-driven risk assessment, parametric trigger-based automation, and instant payout mechanisms, we eliminate the delays and complexities of traditional insurance systems.
