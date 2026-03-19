@@ -39,7 +39,7 @@ Work Pattern
   - Working hours  
 
  Key Problems Faced
-  Delivery partners frequently lose income due to:
+  Delivery partners frequently lose income due to
     *  Heavy rain and flooding  
     *  Extreme heat making outdoor work difficult  
     *  High pollution levels  
@@ -71,7 +71,7 @@ Activity-Based Triggers (Critical Layer)
 *Platform-level slowdown (simulated API data)
 
 Multi-Condition Trigger Logic
-  Payouts are triggered only when multiple conditions are satisfied together, for example:
+  Payouts are triggered only when multiple conditions are satisfied together, for example
     * Severe rain detected  
     * AND delivery activity drops significantly  
     * AND multiple workers in the same zone are affected  
@@ -82,7 +82,7 @@ This prevents false claims based on a single manipulated signal.
  Weekly Pricing Model:
 
 Our platform follows a dynamic weekly pricing model, designed specifically for gig workers whose earnings are short-term, variable, and highly sensitive to external disruptions.
-Unlike traditional insurance, which relies on fixed premiums and long-term policies, our model is:
+Unlike traditional insurance, which relies on fixed premiums and long-term policies, our model is
 
 *  Weekly-based (aligned with gig income cycles)  
 *  AI-driven (risk-adjusted pricing)  
@@ -100,10 +100,10 @@ Risk Score Factors:
 
  
  Payout Calculation
-      Payouts are based on actual income loss:
+      Payouts are based on actual income loss
        Payout = average hourly income × hours affected
 
-This ensures:
+This ensures
 * Accurate compensation  
 * No fixed or arbitrary payouts  
 * Direct linkage to worker earnings  
@@ -117,7 +117,7 @@ This ensures:
 This allows the system to stay responsive and fair.
 
 Financial Sustainability (Important Layer)
-  To prevent system abuse and ensure long-term viability:
+  To prevent system abuse and ensure long-term viability
     * Risk-based pricing balances high-risk users  
     * Coverage limits are enforced per plan  
     * Multi-condition triggers prevent false payouts  
@@ -157,7 +157,7 @@ Genuine Worker Pattern
  Spoofed User Pattern
 
 * Sudden unrealistic location jumps  
-* No delivery activity before claim  *
+* No delivery activity before claim  
 *  Static or inconsistent movement  
 *Mismatch with surrounding worker activity  
 
@@ -167,7 +167,7 @@ Genuine Worker Pattern
 * High-risk  
 
 Data Signals Used (Beyond GPS)
-  Our AI engine combines multiple data streams to make accurate decisions:
+  Our AI engine combines multiple data streams to make accurate decisions
 
 Device & Location Intelligence
 *  GPS consistency over time  
@@ -185,7 +185,7 @@ Environmental Cross-Verification
 * Area-wide delivery drop  
 
 Network-Level Detection (AI-Driven)
-* Cluster Detection Models identify:
+* Cluster Detection Models identify
   - Multiple users showing identical patterns  
   - Sudden surge of claims from same region  
 * Graph-based analysis detects coordinated fraud rings  
@@ -227,7 +227,7 @@ Backend (Application Layer)
 * Node.js
 *  Express.js  
 
-The backend handles core system logic, including:
+The backend handles core system logic, including
 * User authentication and profile management  
 * Policy creation and management  
 * Claim processing and payout triggering  
@@ -254,7 +254,7 @@ Used to store:
 
 APIs & External Data Integration
 
-To enable real-time parametric triggers, the system integrates multiple APIs:
+To enable real-time parametric triggers, the system integrates multiple APIs
 
 *  Weather APIs → rainfall, temperature, flood alerts  
 *  Air Quality APIs → pollution levels  
@@ -274,7 +274,7 @@ Fraud Detection & Security Layer
 * Multi-signal validation system  
 * Device and location verification logic  
 
-This layer ensures protection against:
+This layer ensures protection against
 * GPS spoofing  
 * Fake claims  
 * Coordinated fraud attacks  
