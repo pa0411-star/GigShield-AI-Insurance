@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GigShield Dashboard</title>
+
+    <style>
+        body {
+          margin: 0;
+          font-family: Arial, sans-serif;
+          background: #f4f6fb;
+          display: flex;
+        }
+
+        /* Sidebar */
+        .sidebar {
+          width: 220px;
+          background: white;
+          height: 100vh;
+          padding: 20px;
+          border-right: 1px solid #eee;
+        }
+
+        .sidebar h2 {
+          color: #3b82f6;
+        }
+
+        .menu {
+          margin-top: 20px;
+        }
+
+        .menu div {
+          padding: 10px;
+          margin: 5px 0;
+          cursor: pointer;
+          border-radius: 8px;
+        }
+
+        .menu div:hover {
+          background: #f0f7ff;
+        }
+
+        /* Main */
+        .main {
+          flex: 1;
+          padding: 20px;
+        }
+
+        /* Topbar */
+        .topbar {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 20px;
+        }
+
+        .search {
+          padding: 8px;
+          border-radius: 20px;
+          border: 1px solid #ddd;
+          width: 200px;
+        }
+
+        /* Cards */
+        .cards {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+          gap: 20px;
+        }
+
+        .card {
+          padding: 20px;
+          border-radius: 15px;
+          background: white;
+          box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .card.dark {
+          background: black;
+          color: white;
+        }
+
+        /* Section */
+        .section {
+          margin-top: 30px;
+        }
+
+        /* Table */
+        table {
+          width: 100%;
+          border-collapse: collapse;
+        }
+
+        th, td {
+          padding: 10px;
+          border-bottom: 1px solid #ddd;
+          text-align: left;
+        }
+
+        /* Badge */
+        .badge {
+          padding: 4px 8px;
+          border-radius: 5px;
+          font-size: 12px;
+        }
+
+        .green { background: #e6f9ec; color: green; }
+        .red { background: #ffe5e5; color: red; }
+
+        /* Buttons */
+        button {
+          padding: 10px;
+          border-radius: 8px;
+          border: none;
+          background: #ff5722;
+          color: white;
+          cursor: pointer;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<!-- Sidebar -->
+<div class="sidebar">
+    <h2>GigShield AI</h2>
+
+    <div class="menu">
+        <div><b>Overview</b></div>
+        <div>Claims</div>
+        <div>Payments</div>
+        <div>Statistics</div>
+        <div>Documents</div>
+        <div>Profile</div>
+        <div>Settings</div>
+    </div>
+</div>
+
+<!-- Main -->
+<div class="main">
+
+    <!-- Topbar -->
+    <div class="topbar">
+        <h2>Insurance Dashboard</h2>
+        <input class="search" placeholder="Search">
+    </div>
+
+    <!-- Cards -->
+    <div class="cards">
+
+        <div class="card dark">
+            <h3>Active Coverage</h3>
+            <h2>₹2000</h2>
+            <p>Weekly Protection</p>
+        </div>
+
+        <div class="card">
+            <h3>Total Income Saved</h3>
+            <h2>₹1,250</h2>
+            <p>From Claims</p>
+        </div>
+
+        <div class="card">
+            <h3>Current Risk</h3>
+            <h2>🔴 High</h2>
+            <p>Rain expected</p>
+        </div>
+
+        <div class="card">
+            <h3>Next Payment</h3>
+            <h2>₹30</h2>
+            <p>Due in 3 days</p>
+        </div>
+
+    </div>
+
+    <!-- Claims Section -->
+    <div class="section">
+        <h3>Recent Claims</h3>
+
+        <table>
+            <tr>
+                <th>Event</th>
+                <th>Date</th>
+                <th>Amount</th>
+                <th>Status</th>
+            </tr>
+
+            <tr>
+                <td>Heavy Rain</td>
+                <td>Mar 15</td>
+                <td>₹220</td>
+                <td><span class="badge green">Paid</span></td>
+            </tr>
+
+            <tr>
+                <td>High AQI</td>
+                <td>Mar 12</td>
+                <td>₹150</td>
+                <td><span class="badge green">Paid</span></td>
+            </tr>
+
+            <tr>
+                <td>Heat Wave</td>
+                <td>Mar 10</td>
+                <td>₹180</td>
+                <td><span class="badge red">Processing</span></td>
+            </tr>
+
+        </table>
+    </div>
+
+    <!-- Insights -->
+    <div class="section">
+        <h3>Weekly Insights</h3>
+
+        <div class="cards">
+            <div class="card">
+                <p>Hours Lost</p>
+                <h2>4 hrs</h2>
+            </div>
+
+            <div class="card">
+                <p>Estimated Loss</p>
+                <h2>₹300</h2>
+            </div>
+
+            <div class="card">
+                <p>Covered Amount</p>
+                <h2>₹280</h2>
+            </div>
+        </div>
+    </div>
+
+    <!-- Action Buttons -->
+    <div class="section">
+        <h3>Manage Policy</h3>
+        <button>Upgrade Plan</button>
+        <button>Pause Coverage</button>
+    </div>
+
+</div>
+
+</body>
+</html>
